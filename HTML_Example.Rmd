@@ -1,0 +1,74 @@
+---
+title: "RMarkdown - HTML"
+author: "Greg Rousell"
+date: "13/06/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## HTML Example
+
+This is an example of an RMarkdown file that will render to HTML. 
+
+While RMarkdwon will translate to HTML, you can incorporate code in the document as well.  `**Bolded Text**` and `<strong>Bolded Text</strong>` will both result in **Bolded Text**. 
+
+## Lists
+
+Here is an example of a list using RMarkdown. 
+
+`* Item 1`  
+`* Item 2`   
+`* Item 3`  
+
+renders as:
+
+* Item 1
+* Item 2
+* Item 3
+
+## Images
+
+`![](images/rstudio.png)`
+
+will insert this image:
+
+![](images/rstudio.png)
+
+You can also adjust the size of the image.  
+
+`![](images/rstudio.png){width=250px}`  
+![](images/rstudio.png){width=125px}
+
+## R Code
+
+```{r echo=TRUE}
+suppressPackageStartupMessages(library(tidyverse))
+
+df <- read_csv("data/sample_data.csv")
+```
+
+### Some data cleaning
+
+```{r echo=TRUE}
+levels <- c ("1 - Not at All", 
+             "2",
+             "3", 
+             "4", 
+             "5 - Significantly")
+
+df <- df %>% 
+  mutate_at(vars (starts_with("session")),
+            ~(parse_factor(., levels = levels)
+                 )
+            )
+
+
+
+```
+
+
+
+
