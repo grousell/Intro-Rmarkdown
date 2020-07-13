@@ -2,8 +2,16 @@ RespondentID,school,session_useful,session_applicable,session_changed,session_re
 123464,Shermer High School,5 - Significantly,5 - Significantly,5 - Significantly,5 - Significantly
 123466,Degrassi Junior High,4,4,5 - Significantly,5 - Significantly
 123479,Ridgemont High School,5 - Significantly,4,3,5 - Significantly
-123521,Shermer High School,4,5 - Significantly,4,NA
-123529,Degrassi Junior High,5 - Significantly,5 - Significantly,5 - Significantly,4
+123521,Shermer High School,5 - Significantly,5 - Significantly,5 - Significantly,4
+123522,Shermer High School,2,2,1 - Not at All,4
+123523,Shermer High School,5 - Significantly,5 - Significantly,5 - Significantly,3
+123524,Shermer High School,3,4,3,3
+123525,Shermer High School,1 - Not at All,1 - Not at All,4,1 - Not at All
+123526,Shermer High School,4,4,4,4
+123527,Shermer High School,4,5 - Significantly,1 - Not at All,4
+123528,Shermer High School,2,2,2,2
+123529,Shermer High School,4,5 - Significantly,4,4
+123529,Degrassi Junior High,5 - Significantly,5 - Significantly,4,4
 123547,Ridgemont High School,2,2,1 - Not at All,4
 123565,Shermer High School,5 - Significantly,5 - Significantly,5 - Significantly,3
 123584,Degrassi Junior High,3,4,3,3
@@ -238,6 +246,18 @@ RespondentID,school,session_useful,session_applicable,session_changed,session_re
 128018,Degrassi Junior High,5 - Significantly,5 - Significantly,3,4
 128055,Shermer High School,4,5 - Significantly,3,5 - Significantly
 128073,Degrassi Junior High,2,3,1 - Not at All,5 - Significantly
+128074,Degrassi Junior High,5 - Significantly,5 - Significantly,3,5 - Significantly
+128075,Degrassi Junior High,4,4,5 - Significantly,4
+128076,Degrassi Junior High,1 - Not at All,3,4,4
+128077,Degrassi Junior High,4,4,4,4
+128078,Degrassi Junior High,1 - Not at All,3,1 - Not at All,3
+128079,Degrassi Junior High,4,5 - Significantly,4,4
+128080,Degrassi Junior High,4,5 - Significantly,1 - Not at All,1 - Not at All
+128081,Degrassi Junior High,4,5 - Significantly,4,4
+128082,Degrassi Junior High,5 - Significantly,5 - Significantly,4,4
+128083,Degrassi Junior High,5 - Significantly,5 - Significantly,5 - Significantly,5 - Significantly
+128084,Degrassi Junior High,5 - Significantly,1 - Not at All,5 - Significantly,1 - Not at All
+128085,Degrassi Junior High,5 - Significantly,1 - Not at All,5 - Significantly,1 - Not at All
 128092,Ridgemont High School,5 - Significantly,5 - Significantly,4,5 - Significantly
 128110,Shermer High School,5 - Significantly,5 - Significantly,3,5 - Significantly
 128129,Degrassi Junior High,5 - Significantly,5 - Significantly,4,4
@@ -245,7 +265,10 @@ RespondentID,school,session_useful,session_applicable,session_changed,session_re
 128165,Shermer High School,4,5 - Significantly,4,4
 128184,Degrassi Junior High,4,4,3,4
 128202,Ridgemont High School,4,4,2,5 - Significantly
-128221,Shermer High School,5 - Significantly,5 - Significantly,5 - Significantly,5 - Significantly
+128221,Shermer High School,1 - Not at All,5 - Significantly,5 - Significantly,5 - Significantly
+128223,Shermer High School,5 - Significantly,1 - Not at All,5 - Significantly,1 - Not at All
+128226,Shermer High School,5 - Significantly,1 - Not at All,5 - Significantly,1 - Not at All
+128227,Shermer High School,5 - Significantly,5 - Significantly,1 - Not at All,5 - Significantly
 128239,Degrassi Junior High,4,4,3,5 - Significantly
 128257,Ridgemont High School,4,4,5 - Significantly,4
 128276,Shermer High School,4,4,4,5 - Significantly

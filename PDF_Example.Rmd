@@ -1,8 +1,8 @@
 ---
-title: "RMarkdown - HTML"
+title: "RMarkdown - PDF"
 author: "Greg Rousell"
 date: "13/06/2020"
-output: html_document
+output: pdf_document  
 ---
 
 ```{r setup, include=FALSE}
@@ -13,11 +13,11 @@ suppressPackageStartupMessages(library(kableExtra))
 suppressPackageStartupMessages(library(formattable))
 ```
 
-## HTML Example
+## PDF Example
 
 This is an example of an RMarkdown file that will render to HTML. 
 
-While RMarkdwon will translate to HTML, you can incorporate code in the document as well.  `**Bolded Text**` and `<strong>Bolded Text</strong>` will both result in **Bolded Text**. 
+While RMarkdwon will translate to Latex, you can incorporate code in the document as well.  `**Bolded Text**` and `\textbf{Bolded Text}` will both result in **Bolded Text**. 
 
 ## Lists
 
@@ -126,7 +126,7 @@ table %>%
 ```
 
 ### Formatting with `kableExtra`
-#### http://haozhu233.github.io/kableExtra/awesome_table_in_html.html
+#### http://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf
 
 Changing the font size
 ```{r echo=TRUE}
@@ -156,6 +156,17 @@ table %>%
   kable_styling(font_size = 15) %>% 
   column_spec(2:3, width = "8em")
 ```
+
+## Columns using `minipage`
+### Have to use `\includegraphics{path/to/image}` within `minipage`
+
+\begin{minipage}[]{0.3\textwidth}
+Here is some text. 
+\end{minipage}
+\begin{minipage}[]{0.7\textwidth}
+Here is some more text, and an image.\\ 
+\includegraphics[width = 2cm]{images/hex-rmarkdown}
+\end{minipage}
 
 
 
