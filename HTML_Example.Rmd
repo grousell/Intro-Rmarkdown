@@ -158,7 +158,19 @@ table %>%
 ```
 
 
+## Split Columns - HTML
+### This requires HTML embedded with RMarkdown
 
+In CSS file add the following:
 
+![](images/css_example.png)
+
+In the RMarkdown file add the following:  
+
+`<div class="col2">`
+
+Add content here    
+
+`</div>`  
 
 
