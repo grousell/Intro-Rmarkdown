@@ -10,10 +10,20 @@ header-includes:
    - \usepackage{longtable}
    # - \usepackage{draftwatermark}
 geometry: "left=1.5cm,right=1.5cm,bottom=1.5cm"
-output:
+output: 
   pdf_document:
     latex_engine: xelatex
+    
 ---
+
+```{r filter_data, echo=FALSE}
+
+temp <- df %>% 
+  dplyr::filter (school == sch)
+
+n_students <- length (temp$RespondentID)
+
+```
 
 \thispagestyle{empty}
 \pagestyle{fancy}
@@ -31,22 +41,21 @@ output:
 %%% <!-- Title of Report Line 2-->
 \Large{Laurier Summer Institute of Research Methods}\\
 \end{minipage}
-
+\vspace{2cm}
+\LARGE
+Survey Results for `r sch`
 \raggedright  <!--removes hyphenation  -->
 \vspace{0.5cm}
 
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\normalsize
 # Background
 This document is intended as an example of using RMarkdown and LaTex to create professional looking reports.   
-
-This R Chunk filters out the school so that all analyses in the document is specfic to that school. 
-```{r}
-
-temp <- df %>% 
-  dplyr::filter (school == sch)
-
-n_students <- length (temp$RespondentID)
-
-```
 
 In total there were `r n_students` students from `r sch`. 
 
@@ -54,7 +63,14 @@ In total there were `r n_students` students from `r sch`.
 
 # Results
 
-```{r}
+Participants from `r sch` were asked four questions about the professional development session:  
+- The session was applicable to my work  
+- The session changes my thinking  
+- The sessio reinforced my thinking  
+- The session was useful  
+
+The charts below show the percentage of respondents in each category, by the four questions. 
+```{r chart, echo=FALSE}
 summary_table %>% 
   dplyr::filter(school == sch) %>% 
   ggplot (aes(response, Percent)) + 

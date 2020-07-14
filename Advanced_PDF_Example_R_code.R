@@ -5,7 +5,6 @@ library(tidyverse)
 library(scales)
 library(rmarkdown)
 
-
 # ggplot theme ------------------------------------------------------------
 
 theme_update(
@@ -65,13 +64,11 @@ summary_table <- df %>%
 
 # Loop --------------------------------------------------------------------
 
-
 for (sch in unique(df$school)) {
   rmarkdown::render("Advanced_PDF_Example.Rmd",
                     output_file =  paste(sch, "_report.pdf", sep=''), 
                     output_dir = './reports/')
 }
-
 
 #remove temporary files
 files.tex <- list.files(pattern = "\\.tex$")
