@@ -50,7 +50,6 @@ df <- df %>%
             )
   )
 
-
 # Summary Table
 
 summary_table <- df %>% 

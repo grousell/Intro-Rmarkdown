@@ -17,7 +17,7 @@ suppressPackageStartupMessages(library(formattable))
 
 This is an example of an RMarkdown file that will render to HTML. 
 
-While RMarkdwon will translate to Latex, you can incorporate code in the document as well.  `**Bolded Text**` and `\textbf{Bolded Text}` will both result in **Bolded Text**. 
+While RMarkdown will translate to Latex, you can incorporate code in the document as well.  `**Bolded Text**` and `\textbf{Bolded Text}` will both result in **Bolded Text**. 
 
 ## Lists
 

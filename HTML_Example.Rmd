@@ -2,7 +2,9 @@
 title: "RMarkdown - HTML"
 author: "Greg Rousell"
 date: "13/06/2020"
-output: html_document
+output: 
+  html_document:
+    css: css/styles.css
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +19,7 @@ suppressPackageStartupMessages(library(formattable))
 
 This is an example of an RMarkdown file that will render to HTML. 
 
-While RMarkdwon will translate to HTML, you can incorporate code in the document as well.  `**Bolded Text**` and `<strong>Bolded Text</strong>` will both result in **Bolded Text**. 
+While RMarkdown will translate to HTML, you can incorporate code in the document as well.  `**Bolded Text**` and `<strong>Bolded Text</strong>` will both result in **Bolded Text**. 
 
 ## Lists
 
@@ -163,14 +165,36 @@ table %>%
 
 In CSS file add the following:
 
-![](images/css_example.png)
+```{r eval=FALSE, echo=TRUE}
+.col2 {
+  -webkit-columns: 2 200px; /* chrome, safari */
+  -moz-columns: 2 200px;    /* firefox */
+  columns: 2 200px;         /* number of columns and width in pixels*/
+  
+}
+
+.col3 {
+  -webkit-columns: 3 100px;
+  -moz-columns: 3 100px;
+  columns: 3 100px;
+  
+}
+```
 
 In the RMarkdown file add the following:  
 
 `<div class="col2">`
 
-Add content here    
+Here is some text.  
+
+Here is some more text.   
 
 `</div>`  
 
+<div class="col2">
+
+Here is some text.  More and more and more.  
+
+Here is some more text.  
+</div>
 
