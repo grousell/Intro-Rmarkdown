@@ -58,7 +58,14 @@ summary_table <- df %>%
                values_to = "response") %>%
   group_by (school, question) %>% 
   count (response) %>% 
-  mutate (Percent = n / sum(n))
+  mutate (Percent = n / sum(n),
+          question = dplyr::recode(question, 
+                                   session_applicable = "The session was applicable to my work",  
+                                   session_changed = "The session changes my thinking",  
+                                   session_reinforced  = "The session reinforced my thinking",  
+                                   session_useful = "The session was useful")
+          ) %>% 
+  drop_na (response)
   
 
 # Loop --------------------------------------------------------------------
@@ -69,12 +76,4 @@ for (sch in unique(df$school)) {
                     output_dir = './reports/')
 }
 
-#remove temporary files
-files.tex <- list.files(pattern = "\\.tex$")
-if(file.exists(files.tex)) file.remove(files.tex)
 
-files.log <- list.files(pattern = "\\.log$")
-if(file.exists(files.log)) file.remove(files.log)
-
-files.aux <- list.files(pattern = "\\.aux$")
-if(file.exists(files.aux)) file.remove(files.aux)
