@@ -15,7 +15,7 @@ suppressPackageStartupMessages(library(formattable))
 
 ## PDF Example
 
-This is an example of an RMarkdown file that will render to HTML. 
+This is an example of an RMarkdown file that will render to PDF. 
 
 While RMarkdown will translate to Latex, you can incorporate code in the document as well.  `**Bolded Text**` and `\textbf{Bolded Text}` will both result in **Bolded Text**. 
 
@@ -49,10 +49,6 @@ You can also adjust the size of the image.
 ## R Code
 
 ```{r echo=TRUE}
-suppressPackageStartupMessages(library(tidyverse))
-suppressPackageStartupMessages(library(scales))
-
-
 df <- read_csv("data/sample_data.csv")
 ```
 
